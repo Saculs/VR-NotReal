@@ -31,19 +31,19 @@
         font-style: normal;
     }
 
-    h2 {
+    #Catch {
     color:black;
     text-transform: uppercase;
     z-index:100;
    /* transform: translate(0,-100%); */
     font-family: 'favorit_stdbold_extended';
     font-weight: 100;
-    font-size: 260%;
+    font-size: 300%;
     padding-bottom: 0%;
     margin-bottom: 4%;
-    margin-top: 6%;
-    width: 65%;
-    /*position: absolute;
+    margin-top: 3%;
+    width: 90%;
+    position: absolute;/*
     padding-left: 3%;
     left: 0px;
     top: 0px;
@@ -52,6 +52,7 @@
     line-height: 0.8em;
     margin-top: 0.4em;
     */
+    line-height: 0.8em;
   }
 
   #top {
@@ -59,31 +60,12 @@
     z-index:100;
    /* transform: translate(0,-100%); */
     font-weight: 100;
-    position: absolute;
+    position: relative;
     padding-left: 3%;
     padding-right: 3%;
     left: 0px;
     top: 0px;
-    line-height: 0.8em;
     margin-top: 0.4em;
-  }
-
-  #catchPhrase {
-    color:black;
-    font-family: 'favorit_stdregular_extended';
-    font-weight: 600;
-    padding-top: 0;
-    margin-top: 0;
-    left: 0px;
-    top: 0px;
-    width: 65%;
-  }
-
-  #idd {
-    overflow-y:scroll;
-    overflow-x:hidden;
-    height: 70%;
-    width: 100%;
   }
 
   h3 {
@@ -99,17 +81,21 @@
     font-size: 240%;
     width: 65%;
     line-height: 0.8em;
-    margin-top: 0.4em;
+    margin-top: 0.1em;
     padding-bottom: 0%;
-    margin-bottom: 4%;
+    margin-bottom: 0%;
+
   }
 
   #info {
     position: absolute;
     padding-left: 3%;  
     padding-bottom:2%;
-    padding-right:6%;
+    margin-right: 3%;
+    margin-top: 2%;
     bottom:0;
+    top:100%;
+    /*width:100%;*/
   }
 
   #container {
@@ -117,6 +103,7 @@
     top: 0;
     left:0;
     width: 100%;
+
     height: 100%;
     /*visibility: hidden;*/ 
     line-height: 1.8em;
@@ -130,6 +117,7 @@
     left: 13px;
     white-space: initial;
     line-height: 1.15em;
+    display: table-caption;
   }
 
   #my_image {
@@ -138,7 +126,9 @@
     height:auto;
     /*margin-right: -50%;
     transform: translate(-50%, -50%)*/
-    margin-top: 0.4em;
+    padding-top: 0%;
+    margin-bottom: 0.0em;
+    margin-top: 0.6em;
 }
 
 #yt{
@@ -152,30 +142,50 @@
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<div id="container">
-    <div id="cont">
-      <div id="top">
-        <h2>VR&AR</h2>
-        <p id="catchPhrase">We make tailored interactive VR & AR experiences</p>
-        <div id="idd">
+    <div id="container">
+        <div id="cont">
 
-        <h3>Czech Innovation Expo</h3>
-        <!--<img id="my_image" src="hp0.jpg"/>
-        <iframe id="yt" src="https://www.youtube.com/embed/N2i-X9f01Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        -->
-        <img id="my_image" src="cie.png"/>
-        <img id="my_image" src="cie1.png"/>
-        <h3>J&T Bank</h3>
-        <img id="my_image" src="jt1.png"/>
+          <div id="top">
+            <h2 id="Catch">We make tailored interactive VR & AR experiences</h2>
+          </div>
 
+          <div id="info">
+              <h3>Czech Innovation Expo</h3>
+              <!--<img id="my_image" src="hp0.jpg"/>
+              <iframe id="yt" src="https://www.youtube.com/embed/N2i-X9f01Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              -->
+              <img id="my_image" src="cie.png"/>
+
+              <h3>J&T Bank</h3>
+              <img id="my_image" src="jt1.png"/>
+
+              <h3>J&T Bank</h3>
+              <img id="my_image" src="jt1.png"/>
+          </div>
 
         </div>
       </div>
-      <div id="info">
-        <!-- <h3>We make tailored interactive VR experiences</h3> -->
-        <p id="theRest">We make tailored interactive VR & AR experiences</p>
-      </div>
-    </div>
-  </div>
+
+
+    <script>
+      function moveCatch(id, value)
+      {
+          var divPosition = $(id).offset();
+          if(divPosition.top < 0 )
+          { 
+          $(id).animate({
+          "top": 0
+          },1000);
+          console.log(":");
+      }else{
+          $(id).animate({
+            "top": -value
+          },1000);
+            console.log(":");
+        };
+      }
+
+      setTimeout(function(){ moveCatch("#Catch", 300); moveCatch("#info", 0)  }, 2200);
+    </script>
 </body>
 </html>

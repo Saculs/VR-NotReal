@@ -4,11 +4,17 @@
 <head>
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>VR & AR by NotReal</title>
   <meta name="description" content="Virtual and Augmented Reality production">
   <meta name="author" content="Not Real">
 
   <style>
+    body{
+      
+    }
+    
     @font-face {
     font-family: 'favorit_stdregular_extended';
     src: url('FavoritStd/favoritstd-regularextended-webfont.woff2') format('woff2'),
@@ -32,13 +38,52 @@
    /* transform: translate(0,-100%); */
     font-family: 'favorit_stdbold_extended';
     font-weight: 100;
-    position: absolute;
-    left: 13px;
+    font-size: 260%;
+    padding-bottom: 0%;
+    margin-bottom: 4%;
+    margin-top: 6%;
+    width: 65%;
+    /*position: absolute;
+    padding-left: 3%;
+    left: 0px;
     top: 0px;
-    font-size: 240%;
+  
     width: 65%;
     line-height: 0.8em;
     margin-top: 0.4em;
+    */
+  }
+
+  #top {
+    color:black;
+    z-index:100;
+   /* transform: translate(0,-100%); */
+    font-weight: 100;
+    position: absolute;
+    padding-left: 3%;
+    padding-right: 3%;
+    left: 0px;
+    top: 0px;
+    line-height: 0.8em;
+    margin-top: 0.4em;
+  }
+
+  #catchPhrase {
+    color:black;
+    font-family: 'favorit_stdregular_extended';
+    font-weight: 600;
+    padding-top: 0;
+    margin-top: 0;
+    left: 0px;
+    top: 0px;
+    width: 65%;
+  }
+
+  #idd {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height: 70%;
+    width: 100%;
   }
 
   h3 {
@@ -48,13 +93,15 @@
    /* transform: translate(0,-100%); */
     font-family: 'favorit_stdbold_extended';
     font-weight: 100;
-    position: absolute;
-    /*left: 13px;
-    top: 0px;
-    font-size: 240%;*/
+    /*position: absolute;
+    left: 13px;
+    top: 0px;*/
+    font-size: 240%;
     width: 65%;
     line-height: 0.8em;
     margin-top: 0.4em;
+    padding-bottom: 0%;
+    margin-bottom: 4%;
   }
 
   #info {
@@ -79,25 +126,56 @@
     color:black;
     font-family: 'favorit_stdregular_extended';
     font-weight: 600;
+    font-size: 200%;
     left: 13px;
     white-space: initial;
     line-height: 1.15em;
   }
+
+  #my_image {
+  /*position: absolute;*/
+    width:100%;
+    height:auto;
+    /*margin-right: -50%;
+    transform: translate(-50%, -50%)*/
+    margin-top: 0.4em;
+}
+
+#yt{
+  width:100%;
+}
 
   </style>
 
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <div id="container">
-  <div id="cont">
-      <h2>VR&AR</h2>
-      
+    <div id="cont">
+      <div id="top">
+        <h2>VR&AR</h2>
+        <p id="catchPhrase">We make tailored interactive VR & AR experiences</p>
+        <div id="idd">
+
+        <h3>Czech Innovation Expo</h3>
+        <!--<img id="my_image" src="hp0.jpg"/>
+        <iframe id="yt" src="https://www.youtube.com/embed/N2i-X9f01Ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        -->
+        <img id="my_image" src="cie.png"/>
+        <img id="my_image" src="cie1.png"/>
+        <h3>J&T Bank</h3>
+        <img id="my_image" src="jt1.png"/>
+
+
+        </div>
+      </div>
       <div id="info">
         <!-- <h3>We make tailored interactive VR experiences</h3> -->
         <p id="theRest">We make tailored interactive VR & AR experiences</p>
+      </div>
     </div>
-  </div>
   </div>
 </body>
 </html>

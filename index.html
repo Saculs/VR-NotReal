@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
 
-  <title>NotReal VR</title>
-  <meta name="description" content="NotReal VR">
-  <meta name="author" content="SitePoint">
+  <title>VR & AR by NotReal</title>
+  <meta name="description" content="Virtual and Augmented Reality production">
+  <meta name="author" content="Not Real">
 
   <style>
     @font-face {
@@ -15,22 +15,72 @@
          url('FavoritStd/favoritstd-regularextended-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    }
 
-}
+    @font-face {
+        font-family: 'favorit_stdbold_extended';
+        src: url('FavoritStdBold/favorit-std-extended-bold-webfont.woff2') format('woff2'),
+            url('FavoritStdBold/favorit-std-extended-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
 
-@font-face {
+    h2 {
+    color:black;
+    text-transform: uppercase;
+    z-index:100;
+   /* transform: translate(0,-100%); */
     font-family: 'favorit_stdbold_extended';
-    src: url('FavoritStdBold/favorit-std-extended-bold-webfont.woff2') format('woff2'),
-         url('FavoritStdBold/favorit-std-extended-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: 100;
+    position: absolute;
+    left: 13px;
+    top: 0px;
+    font-size: 240%;
+    width: 65%;
+    line-height: 0.8em;
+    margin-top: 0.4em;
+  }
 
-}
+  #info {
+    position: absolute;
+    padding-left: 53%;
+    padding-bottom:2%;
+    padding-right:6%;
+    bottom:0;
+  }
+
+  #container {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /*visibility: hidden;*/ 
+    line-height: 1.8em;
+  }
+
+  #theRest {
+    color:black;
+    font-family: 'favorit_stdregular_extended';
+    font-weight: 600;
+    left: 13px;
+    white-space: initial;
+    line-height: 1.15em;
+  }
+
   </style>
 
 </head>
 
 <body>
-<h3>Virtual And Augmented Reality by Not Real</h3>
+<div id="container">
+  <div id="cont">
+      <h2>VR&AR</h2>
+      <div id="info">
+          <h3>We make tailored interactive VR experiences</h3>
+        <p id="theRest">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+  </div>
 </body>
 </html>

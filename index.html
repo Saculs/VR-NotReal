@@ -230,7 +230,12 @@
         };
       }
 
-      setTimeout(function(){ moveCatch("#Catch", 300); moveCatch("#info", 0)  }, 2200);
+      setTimeout(function(){ 
+        setTimeout(function(){ 
+          moveCatch("#Catch", 300);  
+          },400); 
+          moveCatch("#info", 0)  
+        }, 2200);
     </script>
 </body>
 </html>

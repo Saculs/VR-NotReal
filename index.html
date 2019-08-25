@@ -32,7 +32,7 @@
         font-style: normal;
     }
 
-    #Catch {
+    #catch {
     color:black;
     text-transform: uppercase;
     z-index:100;
@@ -44,7 +44,7 @@
     margin-bottom: 4%;
     margin-top: 3%;
     margin-right: 3%;
-    width: 70%;
+    width: 90%;
     position: absolute;/*
     padding-left: 3%;
     left: 0px;
@@ -152,6 +152,71 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 0px) {
+  h3 {
+    font-size: 235%;
+  } 
+  #catch {
+    font-size: 235%;
+  }
+  #gizmo {
+    width:50px;
+    height:50px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  h3 {
+    font-size: 310%;
+  }
+  #catch {
+    font-size: 310%;
+  }
+  #gizmo {
+    width:70px;
+    height:70px;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  h3 {
+    font-size: 420%;
+  }
+  #catch {
+    font-size: 420%;
+  }
+  #gizmo {
+    width:90px;
+    height:90px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  h3 {
+    font-size: 450%;
+  }
+  #catch {
+    font-size: 450%;
+  }
+  #gizmo {
+    width:110px;
+    height:110px;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  h3 {
+    font-size: 600%;
+  }
+  #catch{
+    font-size: 600%;
+  }
+  #gizmo {
+    width:135px;
+    height:135px;
+  }
+
   </style>
 
 </head>
@@ -163,7 +228,7 @@ a {
         <div id="cont">
 
           <div id="top">
-            <h2 id="Catch">We make tailored interactive VR & AR experiences</h2>
+            <h2 id="catch">We make tailored interactive VR & AR experiences</h2>
           </div>
 
           <div id="info">
@@ -238,10 +303,10 @@ a {
 
       setTimeout(function(){ 
         setTimeout(function(){ 
-          moveCatch("#Catch", 300);  
-          },400); 
-          moveCatch("#info", 0)  
-        }, 2200);
+          moveCatch("#catch", 300);  
+          },200); 
+          moveCatch("#info", 0); 
+        }, 2800);
     </script>
 </body>
 </html>

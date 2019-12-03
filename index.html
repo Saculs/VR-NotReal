@@ -15,7 +15,7 @@
     body{
       background-color:black;
     }
-    
+
     @font-face {
     font-family: 'favorit_stdregular_extended';
     src: url('https://notreal.xyz/FavoritStd/favoritstd-regularextended-webfont.woff2') format('woff2'),
@@ -49,7 +49,7 @@
     padding-left: 3%;
     left: 0px;
     top: 0px;
-  
+
     width: 65%;
     line-height: 0.8em;
     margin-top: 0.4em;
@@ -90,7 +90,7 @@
 
   #info {
     position: absolute;
-    margin-left: 3%;  
+    margin-left: 3%;
     padding-bottom:2%;
     margin-right: 3%;
     margin-top: 2%;
@@ -106,7 +106,7 @@
     width: 100%;
 
     height: 100%;
-    /*visibility: hidden;*/ 
+    /*visibility: hidden;*/
     line-height: 1.8em;
   }
 
@@ -155,7 +155,7 @@ a {
 @media screen and (min-width: 0px) {
   h3 {
     font-size: 200%;
-  } 
+  }
   #catch {
     font-size: 200%;
   }
@@ -243,17 +243,20 @@ a {
           </div>
 
           <div id="info">
+              <h3>Skoda<br>Realtime</h3>
+              <img id="my_image" src="https://raw.githubusercontent.com/Saculs/VR-NotReal/master/pics/Skoda.jpg"/>
+
               <a href="https://ciexpo.cz">
               <h3>Czech<br>Innovation<br>Expo</h3>
               <img id="my_image" src="https://raw.githubusercontent.com/Saculs/VR-NotReal/master/pics/cie1.jpg"/>
-            </a>
+              </a>
 
               <h3>J&T Bank</h3>
               <img id="my_image" src="https://raw.githubusercontent.com/Saculs/VR-NotReal/master/pics/jt1.png"/>
 
               <h3>bee</h3>
               <img id="my_image" src="https://raw.githubusercontent.com/Saculs/VR-NotReal/master/pics/bee.png"/>
-              
+
               <a href="https://apps.apple.com/us/app/%C5%A1%C3%A1reck%C3%BD-dv%C5%AFr-ar/id1440576421">
               <h3>Sarecky Dvur</h3>
               <img id="my_image" src="https://raw.githubusercontent.com/Saculs/VR-NotReal/master/pics/sarec.JPG"/>
@@ -300,7 +303,7 @@ a {
       {
           var divPosition = $(id).offset();
           if(divPosition.top < 0 )
-          { 
+          {
           $(id).animate({
           "top": 0
           },1000);
@@ -313,11 +316,11 @@ a {
         };
       }
 
-      setTimeout(function(){ 
-        setTimeout(function(){ 
-          moveCatch("#catch", 300);  
-          },200); 
-          moveCatch("#info", 0); 
+      setTimeout(function(){
+        setTimeout(function(){
+          moveCatch("#catch", 300);
+          },200);
+          moveCatch("#info", 0);
         }, 2800);
     </script>
 </body>
